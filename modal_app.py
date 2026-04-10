@@ -33,6 +33,7 @@ image = (
         "python-dotenv>=1.0.0",
         "groq>=0.4.0",
         "tavily-python>=0.5.0",
+        "openai>=1.0.0",
     )
     .add_local_dir(
         LOCAL_DIR / "src",
@@ -112,5 +113,5 @@ def run():
     with open(vector_search_path, "w") as f:
         f.write(content)
 
-    cmd = f"cd {REMOTE_DIR} && python api_server.py --port 8000"
+    cmd = f"cd {REMOTE_DIR} && python api_server.py --host 0.0.0.0 --port 8000"
     subprocess.Popen(cmd, shell=True)
