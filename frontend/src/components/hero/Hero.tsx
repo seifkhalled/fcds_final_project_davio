@@ -20,7 +20,7 @@ export function Hero({ onStartPlanning }: HeroProps) {
   const heroImage = 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=1920&q=80';
 
   return (
-    <div ref={ref} className="relative h-screen w-full overflow-hidden">
+    <div ref={ref} className="relative h-[100dvh] w-full overflow-hidden">
       <motion.div
         style={{ y, opacity }}
         className="absolute inset-0"
@@ -58,7 +58,7 @@ export function Hero({ onStartPlanning }: HeroProps) {
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight mt-16 sm:mt-0"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}

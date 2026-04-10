@@ -85,7 +85,7 @@ export function Step1({ onNext }: Step1Props) {
           When are you traveling?
         </h2>
         <p className="text-offwhite-muted mb-4">Select your date range</p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
            <div>
              <label className="block text-sm text-offwhite-muted mb-2">Start Date</label>
              <input

@@ -61,7 +61,7 @@ export function Step3({ onBack, onGenerate }: Step3Props) {
       <div>
         <h2 className="text-2xl font-bold mb-2">Accommodation</h2>
         <p className="text-offwhite-muted mb-4">What type of stay do you prefer?</p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {accommodationTypes.map((type) => (
             <motion.div
               key={type.id}
@@ -130,7 +130,7 @@ export function Step3({ onBack, onGenerate }: Step3Props) {
             <Zap className="w-6 h-6 text-amber" />
             Trip Pace
           </h2>
-          <div className="flex gap-3 mt-4">
+          <div className="flex flex-col sm:flex-row gap-3 mt-4">
             {paceOptions.map((pace) => (
               <motion.div
                 key={pace.id}
@@ -175,7 +175,7 @@ export function Step3({ onBack, onGenerate }: Step3Props) {
             </span>
           ))}
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2">
           <input
             type="text"
             value={mustVisitInput}
@@ -184,7 +184,7 @@ export function Step3({ onBack, onGenerate }: Step3Props) {
             placeholder="Add a place..."
             className="flex-1 bg-charcoal-lighter border border-border rounded-xl px-4 py-3 text-offwhite placeholder-offwhite-muted/50 focus:border-amber focus:outline-none transition-colors"
           />
-          <Button onClick={addMustVisitTag} variant="outline" size="sm">
+          <Button onClick={addMustVisitTag} variant="outline" size="sm" className="w-full sm:w-auto">
             Add
           </Button>
         </div>
