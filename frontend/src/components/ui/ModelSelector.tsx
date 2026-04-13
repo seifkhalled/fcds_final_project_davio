@@ -60,7 +60,7 @@ export function ModelSelector() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 10 }}
-              className="absolute right-0 bottom-full mb-2 w-72 bg-charcoal-lighter border border-border rounded-2xl shadow-2xl z-50 overflow-hidden"
+              className="absolute left-0 bottom-full mb-2 w-[calc(100vw-2rem)] sm:w-80 bg-charcoal-lighter border border-border rounded-2xl shadow-2xl z-50 overflow-hidden"
             >
               <div className="p-4 bg-charcoal/50 border-b border-border">
                 <span className="text-xs font-bold text-amber uppercase tracking-wider">
